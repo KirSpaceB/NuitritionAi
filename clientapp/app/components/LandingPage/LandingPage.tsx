@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonOne from '../Reusables/ButtonOne'
+import ButtonOne from '../shared/ButtonOne'
 import { Roboto_Font } from '@/app/fonts/Roboto_Bold'
 
 export default function LandingPage() {
