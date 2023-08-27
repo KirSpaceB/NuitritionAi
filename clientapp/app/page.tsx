@@ -1,5 +1,6 @@
 import BodyTypePage from './components/BodyTypePage/BodyTypePage'
 import HeightPage from './components/EnterHeightPage/HeightPage'
+import WeightPage from './components/EnterWeightPage/WeightPage'
 import LandingPage from './components/LandingPage/LandingPage'
 
 export default function Home() {
@@ -23,6 +24,14 @@ export default function Home() {
         backgroundPosition:'center',
       }}>
         <HeightPage/>
+      </div>
+
+      <div className='w-screen h-screen' style={{
+        backgroundImage:`url('/ForkLandingPage.jpg')`,
+        backgroundSize:'cover',
+        backgroundPosition:'center',
+      }}>
+        <WeightPage/>
       </div>
 
     </main>
