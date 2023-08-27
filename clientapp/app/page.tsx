@@ -1,10 +1,14 @@
-import Image from 'next/image'
-
+import LandingPage from './components/LandingPage/LandingPage'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className='bg-red-500 w-[100px] h-[100px]'>
-        test
+    <main>
+
+      <div className='w-screen h-screen' style={{
+        backgroundImage:`url('/ForkLandingPage.jpg')`,
+        backgroundSize:'cover',
+        backgroundPosition:'center'
+      }}>
+        <LandingPage/>
       </div>
     </main>
   )
