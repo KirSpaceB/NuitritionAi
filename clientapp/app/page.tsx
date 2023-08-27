@@ -1,8 +1,8 @@
-import BodyTypePage from './components/BodyTypePage/BodyTypePage'
 import LandingPage from './components/LandingPage/LandingPage'
 export default function Home() {
   return (
-    <main className='overflow-x-hidden'>
+    <main>
+
 
       <div className='w-screen h-screen' style={{
         backgroundImage:`url('/ForkLandingPage.jpg')`,

@@ -1,16 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
+
 interface IButtonOneProps {
-  text: string
+  children:ReactNode
 }
-export default function ButtonOne(props:IButtonOneProps) {
-  const {text} = props
+export default function ButtonOne(props: IButtonOneProps) {
+  
   return (
-    <div>
-      <button className='sm:w-[264px] sm:h-[66px] rounded-2xl' style={{
-        backgroundColor:"#A8BBFF"
-      }}>
-        {text}
-      </button>
-    </div>
+    <button className='sm:w-[264px] sm:h-[66px] rounded-2xl bg-buttonPrimary'>
+      {props.children}
+    </button>
   )
 }
