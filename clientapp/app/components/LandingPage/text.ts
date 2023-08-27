@@ -1,0 +1,3 @@
+export const textForLandingPage = {
+  productDescription:`Unlock the future of nutrition with our AI-powered platform, tailored to serve your unique dietary needs and goals. Experience personalized meal planning, real-time nutrient tracking, and science-backed recommendations, all in one place. Elevate your health journey today with the precision and intelligence only our AI nutrition helper can offer."`
+}

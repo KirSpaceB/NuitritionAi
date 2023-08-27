@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
+        'primaryColorOne':'#FECE46',
         'buttonPrimary':'#A8BBFF'
       },
       colors: {
