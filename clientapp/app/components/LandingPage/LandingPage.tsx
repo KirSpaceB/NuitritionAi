@@ -8,7 +8,7 @@ export default function LandingPage() {
     <div className={Roboto_Font.className}>
       <div className='flex flex-col space-y-10'>
         <div id='LP_Header_Text' className='flex flex-col mt-10 ml-10 sm:mt-[250px] sm:ml-[150px]'>
-          <h1 className='text-primaryTextColorTwo sm:text-6xl'>
+          <h1 className='text-primaryColorTwo sm:text-6xl'>
             Healthy
           </h1>
           <h3 className='sm:text-4xl'>living made easy!</h3>

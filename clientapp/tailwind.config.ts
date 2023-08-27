@@ -8,12 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        'primaryColorOne':'#FECE46',
-        'buttonPrimary':'#A8BBFF'
-      },
       colors: {
-        'primaryTextColorTwo':'#FB9595'
+        'primaryColorOne':'#FECE46',
+        'primaryColorTwo':'#FB9595',
+        'buttonPrimary':'#A8BBFF'
       },
     },
   },
