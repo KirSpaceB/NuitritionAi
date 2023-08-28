@@ -1,18 +1,16 @@
 'use client'
 import React, { ChangeEvent, FormEvent } from 'react';
-import { useContext } from 'react';
-import { MeasurementContext,IMeasurements } from './context/MeasurementsData';
+import { IMeasurements } from './context/MeasurementsData';
 import { sendMeasurementsToApi } from '@/app/Api/post_measurements';
 
-export default function Measurements() {
+interface IMeasurementsProps {
+  measurements:IMeasurements,
+  updateMeasurements: (type: keyof IMeasurements, value: string) => void;
+}
 
-  const context = useContext(MeasurementContext);
+export default function Measurements(props:IMeasurementsProps) {
 
-  if (!context) {
-    throw new Error("Measurements must be used within a MeasurementsProvider. Check line 17 in Measurements.tsx");
-  };
-
-  const {measurements, updateMeasurements} = context;
+  const {measurements, updateMeasurements} = props;
   
   const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -22,7 +20,7 @@ export default function Measurements() {
     e.preventDefault();
     sendMeasurementsToApi(measurements)
   }
-  // Why I didn't abstract this: I'm thinking that this is already the abstraction of EnterMeasurements.tsx
+
   return (
     <div className='h-screen flex flex-row justify-center items-center'>
 
